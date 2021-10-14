@@ -1,0 +1,2027 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.container{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar{
+    background-color:rgb(67, 76, 204);
+    
+}
+
+.navbar__logo{
+    color: whitesmoke;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+
+.navbar__container{
+    display: flex;
+    background-color: rgba(67, 76, 204, 1);
+    align-items: center;
+    height: 70px;
+}
+ 
+.navbar__menu{
+    /* border: 1px solid green; */
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+  
+}
+.navbar__menu li{
+    /* border: 1px solid white; */
+    margin-right: 30px;
+  
+}
+
+
+.navbar__menu li a{
+    /* border: 1px solid green; */
+    color: whitesmoke;
+    font-size: 16px;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+
+.navbar__container .navbar__btn button{
+    padding: 10px 40px;
+    border: none;
+    background-color: rgba(67, 76, 204, 1);
+    border: 1px solid white;
+    border-radius: 5px;
+    color: whitesmoke;
+    cursor: pointer;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.navbar__container .hamburger{
+    font-size: 25px;
+    color: whitesmoke;
+    display: none;
+}
+
+.navbar__container .navbar__btn button:hover{
+  
+    box-shadow: 0px 0px 0px 1px white;
+}
+
+@media(max-width:375px){
+    .media{
+        margin-left: 14px;
+        margin-right: 14px;
+    }
+    .navbar__container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar__container .hamburger{
+        display: block;
+    }
+
+    .navbar__container .navbar__menu{
+        display: none;
+    }
+
+    .navbar__container .navbar__btn{
+        display: none;
+    }
+}
+
+/* -------- EXPETENDA ------ */
+
+.aboutus{
+    background-color: rgba(67, 76, 204, 1);
+   
+}
+
+.aboutus__container{
+    /* border: 1px solid black; */
+    padding-top: 100px;
+    background-color: rgba(67, 76, 204, 1);
+    display: flex;
+}
+
+.aboutus__container--content h5{
+    /* font-weight: normal; */
+    font-size: 16px;
+    color: whitesmoke;
+    letter-spacing: 5px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+}
+
+.aboutus__container--content h1{
+    /* border: 1px solid black; */
+    font-size: 70px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    color: whitesmoke;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+}
+
+.aboutus__container--content p{
+    color: whitesmoke;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+.aboutus__container--image img{
+    height: 500px;
+    /* border: 1px solid black; */
+    
+}
+
+@media(max-width:375px){
+    .aboutus__container--image img{
+        height: 280px;
+        margin-top: 20px;
+    }
+
+    .aboutus__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutus__container--content h1{
+        font-size: 60px;
+    }
+
+
+}
+.aboutus__container--image{
+    z-index: 1;
+}
+
+
+.aboutus__container--content{
+    flex-basis: 50%;
+    z-index: 5;
+}
+
+.aboutus__container .aboutus__btn button{
+    padding: 10px 40px;
+    border: none;
+    background-color: rgba(241, 181, 5, 1);
+    border: 1px solid white;
+    border-radius: 5px;
+    color: whitesmoke;
+    cursor: pointer;
+    margin-top: 41px;
+    letter-spacing: 1px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+}
+
+
+
+/* ========== Section 1 Vivendo Omnesque ============= */
+
+@media(max-width: 375px){
+
+    .section__one--content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .section__one .section__one--title h2{
+        /* text-align: center; */
+        font-size: 37px;
+    }
+    
+    .section__one .section__one--title p{
+        /* text-align: center; */
+        font-size: 15px;
+    }
+
+    .section__one--row--container{
+        display: flex;
+        flex-direction: column;
+      
+    }
+
+    .section__one--row{
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid rgb(24, 204, 69); */
+        background-color: rgb(255,255,255);
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .section__one .section__one--row .image img{
+        height: 100%;
+    }
+    
+}
+
+
+.section__one{
+    background: rgba(255, 221, 120, 1);
+
+}
+
+.section__one--title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__one--title h2{
+    font-family: 'DM Serif Display', serif;
+    font-size: 56px;
+    margin-top: 50px;
+    font-weight: 400;
+}
+
+.section__one--title p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.section__one--row--container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    padding-bottom: 80px;
+}
+
+.section__one--row{
+    /* border: 1px solid rgb(24, 204, 69); */
+    flex-basis: 32%;
+    padding-top: 50px;
+    background-color: rgb(255,255,255);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__one .section__one--row .image{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    margin-bottom: 50px;
+
+}
+
+.section__one--row--content{
+    /* border: 1px solid black; */
+    margin: 25px 0px 25px 25px;
+}
+
+.section__one--row--content h4{
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.section__one--row--content p{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+    margin: 20px 0px;
+    color: rgb(158, 158, 158);
+}
+
+.section__one--row--content hr{
+    color: rgb(99, 15, 15);
+    height: 1px;
+    border: none;
+    background-color:rgb(224, 224, 224) ;
+    font-size: 0.5px;
+    margin-bottom: 15px;
+}
+
+.section__one--row--content h5{
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+}
+
+/* ---------- Section 2 Graece postea ---------- */
+
+@media(max-width:375px){
+
+    .section__two .section__two--box--title h2{
+        font-size: 40px;
+       
+    }
+
+    .section__two .section__two--box--title p{
+        line-height: 1.5;
+    }
+
+    .section__two--box--img--content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* border: 1px solid black; */
+        padding-bottom: 50px;
+    }
+
+    .section__two .section__two--box--img--content--title{
+        order: 1;
+    }
+
+    .section__two--box--img--content img{
+      width: 100%;
+    }
+}
+
+
+.section__two{
+    background-color: rgb(236, 239, 241);
+   
+}
+.section__two--box--title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.section__two--box--title h5{
+    font-size: 16px;
+    letter-spacing: 5px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    
+}
+
+.section__two--box--title h2{
+    font-family: 'DM Serif Display', serif;
+    font-size: 56px;
+    font-weight: 400;
+  
+}
+
+.section__two--box--title p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 32px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section__two--box--img--content{
+    display: flex;
+    justify-content: center;
+   /* border: 1px solid black */
+}
+.section__two--box--img--content .section__two--img1{
+    height: 300px;
+    /* border: 1px solid green; */
+    margin-bottom: 50px;
+    object-fit: cover;
+}
+.section__two--box--img--content .section__two--img2{
+    height: 300px;
+    /* border: 1px solid green; */
+    margin-bottom: 100px;
+    object-fit: cover;
+}
+
+.section__two--box--img--content--title{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section__two--box--img--content--title h3{
+    font-family: 'DM Serif Display', serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.section__two--box--img--content--title p{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 24px;
+}
+
+.section__two--box--img--content--title h5{
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+}
+
+
+/* -------- Section 3 Fastidii iracundia --------- */
+
+@media(max-width:375px){
+  
+.section__three .section__three--box--title h2{
+    font-size: 45px;
+    text-align: center;
+}
+    
+    .section__three .section__three--box {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .section__three--box--content--images{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section__three .section__three--box--content img{
+        height: 520px;
+        position: absolute;
+        /* padding-left: 74px; */
+        right: -140px;
+        overflow: hidden;
+    }
+
+    .section__three .section__three--box--content{
+        position: relative;
+        overflow: hidden;
+    }
+
+    .section__three .section__three--box--content--title1{
+        height: 100%;
+        padding-top: 30px;
+        padding-left: 20px;
+        z-index: 1;
+    }
+
+    .section__three .section__three--box--content--title1 h2{
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+    .section__three .section__three--box--content--title1 h4{
+       margin-bottom: 10px;
+    }
+
+    .section__three .section__three--box--content{
+        position: relative;
+        margin-top: -280px;
+        height: 450px;
+    }
+
+
+    .section__three .section__three--box--title h5{
+        font-size: 16px;
+        text-align: center;
+    }
+    .section__three .section__three--box--title p{
+        font-size: 15px;
+        /* text-align: justify; */
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    
+    .section__three--box--content--image1{
+        margin-bottom: 0;
+    }
+}
+
+/* -----------------------------------2 */
+
+.section__three{
+    background-color: rgb(242, 242, 242);
+}
+.section__three--box--title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgba(67, 76, 204, 1) ;
+    height: 650px;
+}
+
+.section__three--box--title h5{
+    font-size: 16px;
+    letter-spacing: 5px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    color: rgb(255,255,255);
+}
+
+.section__three--box--title h2{
+    font-family: 'DM Serif Display', serif;
+    font-size: 56px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: rgb(255,255,255);
+}
+
+.section__three--box--title p{
+    font-size: 20px;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    color: rgb(255,255,255);
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.section__three--box--content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -320px;
+
+    /* border: 1px solid black; */
+}
+
+.section__three--box--content--title1{
+    padding-left: 75px;
+}
+
+
+.section__three--box--content--title1 h4{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.section__three--box--content--title1 h2{
+    font-family: 'DM Serif Display', serif;
+    font-size: 56px;
+    font-weight: 400;
+    color: rgb(255,255,255);
+    margin-bottom: 40px;
+   
+}
+
+.section__three--box--content img{
+    height: 450px;
+    margin-right: 75px;
+    /* margin-bottom: 30px; */
+    overflow: hidden;
+}
+
+.section__three--box--content{
+    background-color: rgba(241, 181, 5, 1);
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.section__three--btn button{
+    padding: 10px 40px;
+    border: none;
+    background: rgba(241, 181, 5, 1);
+    border: 1px solid white;
+    border-radius: 5px;
+    color: whitesmoke;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.section__three--box--content--images{
+    display: flex;
+    gap: 2.5%;
+}
+
+.section__three--box--content--image1,
+.section__three--box--content--image2
+{
+    display: flex;
+    /* border: 1px solid black; */
+    padding: 50px 50px 0px 50px;
+    flex-basis: 50%;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.section__three--box--content--image1 img,
+.section__three--box--content--image2 img
+{
+    height: 400px;
+}
+
+.section__three--box--content--title{
+    display: flex;
+    flex-direction: column;
+}
+
+.section__three--box--content--image1{
+    background-color: rgba(233, 74, 71, 1);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+.section__three--box--content--image2{
+    background-color:rgba(66, 141, 252, 1);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+
+.section__three--box--content--title h5{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    color: rgb(255,255,255,0.5);
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.section__three--box--content--title h4{
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    color: rgb(255,255,255);
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.section__three--box--content--title .fal{
+    padding: 8px 15px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255,255,255);
+    border: 1px solid rgb(255,255,255);
+}
+
+.section__three--btn--two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__three--btn--two button{
+    padding: 10px 40px;
+    border: none;
+    background: transparent;
+    border: 1px solid rgba(67, 76, 204, 1);
+    border-radius: 5px;
+    color: rgba(67, 76, 204, 1);
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+/* -------- Section 4 Nemore facilisi -------- */
+
+@media(max-width:375px){
+    .section__four .section__four--box--image img{
+        height:300px
+    }
+
+    .section__four--box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section__four .section__four--box--content--title h2{
+        font-size: 40px;
+    }
+
+    .section__four .section__four--box--content--others--box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section__four .section__four--box--content--others{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* ------------------------------------------ */
+
+.section__four{
+    background-color:rgb(242, 242, 242);;
+}
+.section__four--box--image img{
+    height: 500px;
+    object-fit: cover;
+    /* border: 1px solid tomato; */
+}
+
+.section__four--box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.section__four--box--content{
+    flex-basis: 50%;
+}
+
+.section__four--box--content--title h2{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-size: 56px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  
+}
+
+.section__four--box--content--title p{
+    /* color: rgb(255,255,255); */
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    margin-bottom: 70px;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.section__four--box--content--others--box{
+    display: flex;
+    /* gap: 5%; */
+}
+
+
+.section__four--box--content--others .image{
+    font-size: 60px;
+    margin-bottom: 10px;
+    /* border: 1px solid tomato; */
+}
+
+.section__four .section__four--box--content--others .image img{
+    object-fit: cover;
+    text-align: center;
+    /* border: 1px solid rgb(126, 71, 255); */
+}
+
+.section__four--box--content--others{
+    flex-basis: 50%;
+    /* border: 1px solid green; */
+}
+
+.section__four--box--content--others h4{
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.section__four--box--content--others p{
+    color: rgba(0, 0, 0, 0.5);
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0;
+}
+
+
+/* --------- section 5 Unum porro -------- */
+
+@media(max-width:375px){
+    .section__five{
+        display: flex;
+    }
+    .section__five--box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section__five .section__five--box--part1--container h2{
+        font-size: 40px;
+        padding-left: 0px;
+    }
+    .section__five .section__five--box--part1--container h5{
+        padding-left: 0px;
+    }
+    .section__five .section__five--box--part1--container p{
+        font-size: 15px;
+        padding-left: 0px;
+        /* line-height: normal; */
+    }
+    .section__five .section__five--box--part1--container .section__five--btn button{
+        margin-left: 0px;
+        
+    }
+
+    .section__five .section__five--box--part2--container img{
+        height:300px
+    }
+}
+.section__five{
+    background-color: rgba(67, 76, 204, 1);
+}
+
+.section__five--box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid green; */
+}
+
+.section__five--box--part1--container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-basis:50%;
+}
+
+.section__five--box--part1--container h5{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: rgb(255,255,255);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    
+}
+
+.section__five--box--part1--container h2{
+    font-family: 'DM Serif Display', serif;
+    font-size: 56px;
+    color: rgb(255,255,255);
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.section__five--box--part1--container p{
+    font-family: 'DM Sans', sans-serif;
+    color:rgb(255,255,255);
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.section__five--box--part1--container .section__five--btn button{
+    padding: 10px 40px;
+    border: none;
+    background-color: rgba(241, 181, 5, 1);
+    border: 1px solid white;
+    border-radius: 5px;
+    color: whitesmoke;
+    cursor: pointer;
+    margin-top: 41px;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+.section__five--box--part2--container{
+    flex-basis: 50%;
+}
+.section__five--box--part2--container img{
+    height: 590px;
+    object-fit: cover;
+    width: 100%;
+    vertical-align: bottom;
+   
+}
+
+/* ------ Section 6 Sit alii tantas ------ */
+
+@media(max-width:375px){
+
+    .section__six .section__six--box--part1 h4{
+        font-size: 15px;
+    }
+
+    .section__six .section__six--box--part1 p{
+        font-size: 13px;
+    }
+
+    .section__six--box--part2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section__six .section__six--part2--content img{
+       height: 275px;
+       width: 275px;
+    }
+
+    .section__six .section__six--part2--content{
+        margin-bottom: 15px;
+    }
+}
+
+.section__six{
+    background-color: rgb(242,242,242);
+}
+
+
+.section__six--box--part1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__six--box--part1 h4{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    letter-spacing: 5px;
+}
+.section__six--box--part1 h2{
+    font-family: 'DM Serif Display', serif;
+    font-size: 56px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.section__six--box--part1 p{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    margin-bottom: 50px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 20px;
+}
+
+.section__six--box--part2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.section__six--part2--content{
+    border-radius: 5px;
+    background-color: whitesmoke;
+    margin-bottom: 50px;
+    box-shadow: 0px 2px 5px 0px rgb(117, 117, 117);
+}
+
+.section__six--part2--content img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin: 30px 30px;
+    background-size: 100%;
+    object-fit: cover;
+}
+
+.section__six--part2--content h5{
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    text-shadow: 0px 1px 2px rgba(117, 117, 117 ,0.3);
+}
+
+.section__six--part2--content .section__six--post .fab{
+  
+  font-size: 20px;
+  /* background-color: blueviolet; */
+  margin-left: 10px;
+  color:rgba(0, 0, 0, 0.5) ;
+}
+
+.section__six--part2--content .section__six--post h6{
+    font-family: 'DM Sans', sans-serif;
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    color:rgba(0, 0, 0, 0.5);
+}
+
+.section__six--part2--content .section__six--post{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+   
+}
+
+.section__six--part2--content .section__six--social{
+   display: flex;
+   margin-right: 30px;
+} 
+
+
+/* ------ Section 7 Aliquid menandri ------ */
+
+@media(max-width:375px){
+
+    .section__seven .section__seven--box--part1 h2{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .section__seven .section__seven--box--part1 p{
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .section__seven .section__seven--box--part2--body1{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0%;
+    }
+
+     .section__seven .section__seven--part2--boxes{
+        margin-bottom: 20px;
+     }
+
+     .section__seven .section__seven--box--part2--body2{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+}
+
+.section__seven{
+    background-color: rgb(242, 242, 242);
+}
+
+.section__seven--box--part1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__seven--box--part1 h5{
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.section__seven--box--part1 h2{
+    font-family: 'DM Serif Display', serif;
+    font-size: 56px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.section__seven--box--part1 p{
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 50px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 20px;
+}
+
+.section__seven--part2--boxes{
+    display: flex;
+    flex-basis: 100%;
+    background-color:rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 0px rgb(117, 117, 117);
+}
+
+.section__seven--part2--boxes .image{
+    margin: 30px 15px 0px 30px;
+    color: rgb(253, 216, 53);
+    /* border: 1px solid black; */
+}
+
+
+.section__seven--boxes--title p{
+    color: rgb(0, 0, 0, 0.5);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.section__seven--boxes--title{
+    padding: 25px 40px 20px 10px;
+    
+}
+
+.section__seven--boxes--title h4{
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.section__seven--box--part2--body1{
+    display: flex;
+    gap: 3%;
+    /* border: 1px solid tomato; */
+    padding-bottom: 3%;
+  
+}
+.section__seven--box--part2--body1:last-child{
+    padding-bottom: 0;
+}
+.section__seven--box--part2--body2{
+    display: flex;
+    gap: 3%;
+}
+
+.section__seven--box--part2--body2{
+    padding-bottom: 100px;
+}
+
+
+/* ------- Section 8 DICTA OMNES--------- */
+
+@media(max-width:375px){
+
+    .section__8 .section__8--box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .section__8 .section__8--box--part2 img{
+        height: 280px;
+        width: 280px;
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .section__8 .section__8--box--part3{
+        padding-left: 60px;
+    }
+    
+}
+
+.section__8{
+    background-color: rgba(67, 76, 204, 1);
+}
+
+.section__8--box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 0px;
+}
+
+.section__8--box--part1 .fas{
+    padding: 8px 15px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255,255,255);
+    border: 1px solid rgb(158, 158, 158);
+    font-weight: 100;
+    border-radius: 5px;
+}
+
+.section__8--box--part1 {
+    /* border: 1px solid rgb(255,255,255); */
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.section__8--box--part1 .fa-chevron-left{
+    margin-bottom: 20px;
+}
+
+.section__8--box--part2 img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-position: 100%;
+}
+
+.section__8--box--part3 h5{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+}
+
+.section__8--box--part3 p{
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    line-height: 32px;
+    margin-bottom: 30px;
+}
+
+.section__8--box--part3 h4{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(255,255,255,1);
+    margin-bottom: 20px;
+}
+
+.section__8--box--part3 h6{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: rgba(255,255,255,0.5);
+    font-weight: 400;
+}
+
+
+
+/* --------- Section 9 Contentiones --------- */
+
+@media(max-width:375px){
+    .section__nine .section__nine--box--part1 h2{
+        font-size: 40px;
+    }
+    .section__nine .section__nine--box--part1 h5{
+        font-size: 13px;
+    }
+    .section__nine .section__nine--box--part1 p{
+        font-size: 13px;
+    }
+
+    .section__nine .section__nine--box--part2{
+        display: flex;
+        flex-direction: column;
+     
+    }
+    .section__nine .section__nine--box--part2 span img{
+       width: 100%;
+    }
+    .section__nine .section__nine--box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.section__nine{
+    background-color: rgb(242,242,242);
+}
+
+.section__nine--box--part1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__nine--box--part1 h5{
+    font-family: 'DM Sans', sans-serif;
+    margin-top: 80px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.section__nine--box--part1 h2{
+    font-family: 'DM Serif Display', serif;
+    font-size: 56px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.section__nine--box--part1 p{
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 50px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.section__nine--box--part2{
+    /* border: 1px solid rgb(255, 20, 147); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section__nine--box--part2 span{
+    /* border: 1px solid rgb(255, 20, 147); */
+    margin-bottom: 50px;
+}
+
+.section__nine--box--part2 span img{
+    object-fit: cover;
+    background-position: 100%;
+   
+}
+
+.section__nine--box--part3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__nine--box--part3 button{
+    padding: 10px 40px;
+    border: none;
+    background: transparent;
+    border: 1px solid rgba(67, 76, 204, 1);
+    border-radius: 5px;
+    color: rgba(67, 76, 204, 1);
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 80px;
+}
+
+
+/* -------- Section 10 Sed wisi persius ------------- */
+
+@media(max-width:375px){
+    .section__ten--box{
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+
+    .section__ten .section__ten--box--part1{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .section__ten .section__ten--box--part1 h1{
+        font-size: 40px;
+    }
+    .section__ten .section__ten--box--part1 h2{
+        font-size: 40px;
+    }
+
+    .section__ten .section__ten--box--part1 a{
+       order: 2;
+       margin-left: 0;
+    }
+
+    .section__ten .section__ten--box h4{
+        font-size: 13px;
+    }
+    
+    .section__ten .section__ten--box--part2{
+        display: flex;
+        flex-direction: column;
+       padding-bottom: 20px;
+    }
+    .section__ten .section__ten--box--part2--content{
+        display: flex;
+        flex-direction: column;
+        margin-bottom:30px;
+    }
+    .section__ten .section__ten--box--part2 img{
+        height: 300px;
+        width: 280px;
+        margin: 32px 32px;
+    }
+
+    .section__ten--box--part2--content h5{
+        margin-right: 80px;
+    }
+
+    .section__ten .section__ten--box--part1 .section__ten--box--btn1{
+        display: none;
+    }
+    .section__ten .section__ten--box .section__ten--box--btn2 {
+        display: block;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    
+}
+    
+
+.section__ten{
+        background-color: rgb(242, 242, 242);
+ 
+}
+
+.section__ten--box .section__ten--title{
+    font-family: 'DM Sans', sans-serif;
+    padding-top: 50px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.section__ten--box--part1{
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.section__ten--box--part1 .section__ten--box--btn1{
+    margin-left: auto;
+    align-self: center;
+}
+
+.section__ten--box--part1 button{
+    padding: 10px 40px;
+    border: none;
+    background: transparent;
+    border: 1px solid rgba(67, 76, 204, 1);
+    border-radius: 5px;
+    color: rgba(67, 76, 204, 1);
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.section__ten--box .section__ten--box--btn2 button{
+    padding: 10px 40px;
+    border: none;
+    background: transparent;
+    border: 1px solid rgba(67, 76, 204, 1);
+    border-radius: 5px;
+    color: rgba(67, 76, 204, 1);
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 700;
+   
+}
+
+.section__ten--box .section__ten--box--btn2{
+    /* visibility: hidden; */
+    display: none;
+}
+
+.section__ten--box--part1 h2{
+    font-size: 56px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 56px;
+    font-weight: 400;
+}
+
+
+
+.section__ten--box--part2{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+}
+
+.section__ten--box--part2--content{
+    /* border: 1px solid tomato; */
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 5px 0px rgb(117, 117, 117);
+    border-radius: 5px;
+
+}
+
+.section__ten--box--part2--content img{
+    /* border: 1px solid black; */
+    height: 300px;
+    width: 500px;
+    margin: 32px 32px;
+    background-size: 100% auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.section__ten--box--part2--content h6{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: rgba(0,0,0,0.5);
+    font-weight: 400;
+    margin-left: 32px;
+}
+
+.section__ten--box--part2--content h5{
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-left: 32px;
+}
+
+.section__ten--box--part2--content hr{
+    border: none;
+    height: 1px;
+    background-color: rgb(220, 220, 220);
+    margin-bottom: 20px;
+    margin-left: 32px;
+}
+
+.section__ten--box--part2--content h4{
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 20px;
+    margin-left: 32px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/* ------- Section 11 Viderer -------- */
+
+@media(max-width:375px){
+
+    .section__eleven .section__eleven--box{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+        padding-top: 70px;
+    }
+
+    .section__eleven--box .section__eleven--box--part1{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section__eleven .section__eleven--part1--insta{
+        padding-bottom: 30px;
+    }
+    .section__eleven .section__eleven--box--part2{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+       
+    }
+
+    .section__eleven .section__eleven--box--part2 img{
+        height: 100%;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+}
+
+.section__eleven{
+    background-color: rgb(242, 242, 242);
+}
+
+.section__eleven--part1--insta .fa-instagram{
+    padding: 8px 12px;
+    text-align: center;
+    font-size: 30px;
+    color: rgba(67, 76, 204, 1);
+    border: 1px solid rgba(67, 76, 204, 1);
+    font-weight: 100;
+    border-radius: 5px;
+    
+}
+
+.section__eleven--box{
+    display: flex;
+    /* justify-content: space-between; */
+    padding-top: 80px;
+    padding-bottom: 80px;
+   
+}
+
+.section__eleven--box--part1 h5{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.section__eleven--box--part1 h4{
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.section__eleven--part1--insta{
+    display: flex;
+    gap: 10%;
+    align-items: center;
+}
+
+.section__eleven--part1--insta h6{
+    font-family: 'DM Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.section__eleven--box--part1{
+    /* border: 1px solid brown; */
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    flex-basis: 30%;
+}
+
+.section__eleven--box--part2{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid brown; */
+    flex-basis: 80%;
+    align-items:center;
+}
+
+
+.section__eleven--box--part2 img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: 100% auto;
+    border-radius: 5px;
+}
+
+
+/* -------- Section 12 MAIESTATIS ------- */
+
+@media(max-width:375px){
+    .section__twelve .section__twelve--box{
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        padding-top: 60px;
+    }
+
+    .section__twelve .section__twelve--box--part1 h2{
+        font-size: 40px;
+    }
+    
+    
+    .section__twelve .section__twelve--box--part1 p{
+        font-size: 15px;
+    }
+
+    .section__twelve .section__twelve--part1--subscribe{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section__twelve .section__twelve--part1--subscribe input{
+        margin-bottom: 20px;
+    }
+
+    .section__twelve .section__twelve--box--part2 img{
+    
+        height: 100%;
+        width: 100%;
+      
+    }
+}
+
+.section__twelve{
+    font-family: 'Source Serif Pro', serif;
+    background-color: rgba(255, 221, 120, 1);
+}
+
+.section__twelve--box{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid tomato; */
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.section__twelve--box--part1 h5{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.section__twelve--box--part1 h2{
+    font-family: 'DM Serif Display', serif;
+    font-size: 56px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.section__twelve--box--part1 p{
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 30px;
+    font-weight: 400;
+    line-height: 32px;
+    font-size: 20px;
+}
+
+.section__twelve--part1--subscribe input{
+    padding: 15px 100px 15px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.section__twelve--part1--subscribe input::placeholder{
+    color: rgba(0 ,0, 0, 0.5);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.section__twelve--part1--subscribe{
+    display: flex;
+    gap: 7%;
+}
+
+.section__twelve--part1--subscribe button{
+    padding: 15px 40px;
+    border: none;
+    background: rgba(67, 76, 204, 1);;
+    border: 1px solid rgba(67, 76, 204, 1);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 700;
+    
+}
+
+.section__twelve--box--part2 img{
+    height: 600px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: 100%;
+    /* border: 1px solid green; */
+}
+
+
+/* -------- Section 13  Scribentur ----------- */
+
+@media(max-width:375px){
+    .section__thirteen .section__thirteen--box{
+        display: flex;
+        flex-direction: column;
+        /* margin-left: auto; */
+    }
+
+    .section__thirteen .section__thirteen--box--part1{
+        height: 450px;
+        min-width: 100%;
+        background: linear-gradient( rgba(65, 105, 225, 0.6),rgba(65,105,225, 0.6)),url(section13imgedit.png);
+        position: relative;
+        background-size: cover;
+        border-radius: 5px;
+        margin-left: auto;
+    }
+
+    .section__thirteen .section__thirteen--box--part2 h5{
+       padding-top: 50px;
+    }
+    .section__thirteen .section__thirteen--box--part2 .email input{
+       width: 100%;
+    }
+    .section__thirteen .section__thirteen--box--part2 .message input{
+        padding-right: 0px;
+        width: 100%;
+    }
+    
+
+}
+
+.section__thirteen{
+    background-color: rgba(67, 76, 204, 1);
+    
+}
+
+.section__thirteen--box{
+    display: flex;
+    /* border: 1px solid tomato; */
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+.section__thirteen--box--part1 {
+    height: 450px;
+    min-width: 500px;
+    background: linear-gradient( rgba(65, 105, 225, 0.6),rgba(65,105,225, 0.6)),url(section13imgedit.png);
+    position: relative;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.section__thirteen--box--part1 .fa-map-marker-alt{
+    border: 2px solid rgb(255, 245, 238);
+    padding: 25px 30px;
+    border-radius: 50%;
+    position: absolute;
+    color: rgb(255, 245, 238);
+    left: 50%;
+    top: 50%;
+    font-size: 30px;
+    transform: translate(-50%,-50%);
+}
+
+
+
+.section__thirteen--box--part2 h5{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.section__thirteen--box--part2 h2{
+    color: rgb(255, 255, 255);
+    font-family: 'DM Serif Display', serif;
+    font-size: 56px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.section__thirteen--box--part2 .email input{
+    padding: 15px 300px 15px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.section__thirteen--box--part2 .email input::placeholder{
+    font-family: 'DM Sans', sans-serif;
+    color: rgba(0,0,0,0.5);
+}
+
+.section__thirteen--box--part2 .message input::placeholder{
+    font-family: 'DM Sans', sans-serif;
+    color: rgba(0,0,0,0.5);
+}
+
+.section__thirteen--box--part2 .message input{
+    padding: 15px 300px 70px 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.section__thirteen--box--part2 button{
+    padding: 15px 50px;
+    border: none;
+    background: rgba(241, 181, 5, 1);
+    border: 1px solid rgba(67, 76, 204, 1);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+/* ---------- Section 14 ---------- */
+
+@media(max-width:375px){
+
+    .section__fourteen .section__fourteen--box{
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+
+    .section__fourteen .section__fourteen--box--part1{
+        flex-basis: 100%;
+        padding-bottom: 80px;
+    }
+
+    .section__fourteen .section__fourteen--box--part2{
+        flex-basis: 50%;
+        flex-grow: 2;
+        padding-bottom: 50px;
+    }
+
+    .section__fourteen .section__fourteen--box--part3{
+        flex-basis: 50%;
+        padding-bottom: 50px;
+    }
+
+}
+
+.section__fourteen{
+    background-color: rgb(242,242,242);
+}
+
+.section__fourteen--box{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.section__fourteen--part4--body img, .section__fourteen--part4--body img{
+    height: 70px;
+    max-width: 100px ;
+    object-fit: cover;
+    background-size: cover;
+    background-position: 100% auto;
+    border-radius: 5px;
+}
+
+.section__fourteen--box--part1 h4{
+    margin-bottom: 40px;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.section__fourteen--box--part1 p{
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(0,0,0,0.5);
+    line-height: 24px;
+}
+
+.section__fourteen--part1--social{
+    display: flex;
+    gap: 5%;
+    color: rgba(0,0,0,0.5);
+    font-size: 20px;
+}
+
+.section__fourteen--box--part2 h2, .section__fourteen--box--part3 h2{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.section__fourteen--box--part2 h3, .section__fourteen--box--part3 h3{
+    font-family: 'DM Sans', sans-serif;
+    color: rgba(0 ,0, 0, 0.5);
+    font-weight: 400;
+    line-height: 32px;
+    font-size: 16px;
+}
+
+.section__fourteen--box--part4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid tomato; */
+    /* height: 250px; */
+}
+
+.section__fourteen--part4--body{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.section__fourteen--part4--body:last-child{
+    margin-bottom: 0;
+}
+
+.section__fourteen--part4--para{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.section__fourteen--part4--para p{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: rgba(0,0,0,0.5);
+    /* border: 1px solid black; */
+}
+
+.section__fourteen--part4--body h3{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+
+
